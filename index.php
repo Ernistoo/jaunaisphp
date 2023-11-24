@@ -1,20 +1,30 @@
 <?php
 include "Dog.php";
 include "Cat.php";
+include "Bird.php";
+include "Car.php";
 
-$myDog = new Dog;
-$myDog2 = new Dog;
+$myCar = new Car("Audi", 32131);
+$myCar2 = new Car("VW", 12112);
 
-$cats = [];
+echo $myCar->increaseMileage(120303120123);
+// $myBird = new Bird("nigga", 420);
+// echo $myBird->color . "<br>";
+// $myBird->fly();
 
-$myDog->age = 5;
-$myDog->color = "Black";
-echo $myDog->color;
+// $myBird2 = new Bird("white", 2);
 
-echo get_class($myDog);
+// $myBird2->fly();
+// $cats = [];
 
-for ($i=0; $i < 21; $i++) { 
-    array_push($cats, new Cat);
-}
-var_export($cat);
+// // $myDog->age = 5;
+// $myDog->color = "Black";
+// echo $myDog->color;
+
+// echo get_class($myDog);
+
+// for ($i=0; $i < 21; $i++) { 
+//     array_push($cats, new Cat);
+// }
+// var_export($cats);
 ?>
