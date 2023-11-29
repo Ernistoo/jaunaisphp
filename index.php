@@ -3,11 +3,22 @@ include "Dog.php";
 include "Cat.php";
 include "Bird.php";
 include "Car.php";
+include "Tire.php";
+include "Train.php";
 
-$myCar = new Car("Audi", 32131);
-$myCar2 = new Car("VW", 12112);
+// $myCar = new Car("Audi", 32131);
+// $myCar2 = new Car("VW", 12112);
+// $myTire = new Tire("Big", "Winter", "Good");
+// $myTire2 = new Tire("Medium", "Summer", "Bad");
+$myTrain = new Train("Krampis", "Gauge", 45632);
 
-echo $myCar->increaseMileage(120303120123);
+// echo $myTire->size . " " . $myTire->type . " tires<br>";
+// echo $myTire2->size . " " . $myTire2->type . " tires<br>";
+
+echo $myTrain->increaseMileage(240);
+Train::makeNoise();
+
+// echo $myCar->increaseMileage(120303120123);
 // $myBird = new Bird("nigga", 420);
 // echo $myBird->color . "<br>";
 // $myBird->fly();
