@@ -1,8 +1,11 @@
 <?php
+include_once "Animal.php";
 
-class Dog {
-    public $color;
-    private $age;
+class Dog extends Animal {
+    
+    static function woof(){
+        echo "woof!";
+    }
 }
 
 ?>

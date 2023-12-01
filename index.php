@@ -11,13 +11,16 @@ include "Train.php";
 // $myTire = new Tire("Big", "Winter", "Good");
 // $myTire2 = new Tire("Medium", "Summer", "Bad");
 $myTrain = new Train("Krampis", "Gauge", 45632);
-
+$myDog = new Dog("Reksis", 6);
+$myCat = new Cat("Minis", 2);
+$myCat = new Cat("Brincis", 3);
 // echo $myTire->size . " " . $myTire->type . " tires<br>";
 // echo $myTire2->size . " " . $myTire2->type . " tires<br>";
 
 echo $myTrain->increaseMileage(240);
 Train::makeNoise();
-
+Dog::woof();
+Cat::woof();
 // echo $myCar->increaseMileage(120303120123);
 // $myBird = new Bird("nigga", 420);
 // echo $myBird->color . "<br>";
